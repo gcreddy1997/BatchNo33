@@ -20,6 +20,8 @@ public class LoginActions extends Utility {
 	public static boolean loginForPositiveData(String un, String pw) throws FileNotFoundException, InterruptedException {
 		 flag = false;
 	 try {
+
+		System.out.println("abc");
 		 prop_loct =Utility.loadProperty(Constant.locaters_path);
 		
 		Utility.getLocator("Login_username_txtbox_id").sendKeys(un);
